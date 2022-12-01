@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Speed Typewritting</title>
+</head>
+<body>
+    <div id="userform">
+        <p>Hey there! What is your name?</p>
+        <input id="username-input" type="text">
+        <button id="user-btn">Submit</button>
+        <p id="alert"></p>
+    </div>
+    <div id="instructions" class="unactive">
+        <h2>So you want to play?</h2>
+        <p>Quick steps to start!</p>
+        <p>
+            First of all you can use buttons below to steer your game
+            or use Enter and Esc buttons.
+        </p> 
+        <p><strong>Enter</strong> is used for start timer and reset timer.</p> 
+        <p><strong>ESC</strong> is used for stopping timer. </p>
+        <p>
+            When you get your score, the timer will automatically 
+            stop and turns green. That means that your score is saved!
+        </p> 
+        <p>To check your score just click button with <strong>"Check your score here"</strong>.</p>
+        <p>Sadly that is only a PC/desktop version :(</p> 
+        <p>Yes! It is this easy! Get along and have fun!</p>
+        <p>Click <strong>Ok</strong> button to start</p>
+        <button id="instructions-btn">OK!</button>
+    </div>
+    <div id="score-div" class="unactive">
+        <p id="username">Username</p>
+        <ul id="score-list">
+            <li>Score:</li>
+        </ul>
+    </div>
+    <button id="score-btn">Check your score here</button>
+    <div id="wrapper">
+            <h1 id="head">Check your speed!</h1>
+            <div id="box">
+                <div id="time-counter">
+                    <span id="minutes">00</span> : <span id="seconds">00</span> : <span id="miliseconds">00</span>
+                </div>
+                <p id="text-to-write">Here will be the text you have to write as speed as you can</p>
+                <input id="write-input" type="text" placeholder="Write your text down here, please">
+                <div id="btn-wrapper">
+                    <button id="start">START</button>
+                    <button id="reset-time">Reset timer</button>
+                    <button id="reset-text">Reset text</button>
+                </div>
+            </div>
+    </div>
+    <footer>
+        <p>Copyrighted by <a href="https://github.com/Bubekk">@Bubekk</a></p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
